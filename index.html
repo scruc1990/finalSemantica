@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        
+
+    </head>
+    <body>
+        <div class="container">
+            <header class="p-3 text-bg-dark">
+                <div class="container">
+                  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                    </a>
+            
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                      <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                    </ul>
+            
+            
+                    <div id="sesion" class="text-end">
+
+                    </div>
+                  </div>
+                </div>
+              </header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse"
+                        id="navbarNavAltMarkup">
+                        <div class="navbar-nav mx-auto">
+                            <a class="nav-link" id="aperro" href="#">Perro</a>
+                            <a class="nav-link" id="aperra" href="#">Perra</a>
+                            <a class="nav-link" id="ahamburguesa"
+                                href="#">Hamburguesa</a>
+                            <a class="nav-link" id="asalchipapa"
+                                href="#">Salchipapas</a>
+                            <a class="nav-link" id="achoripan"
+                                href="#">Choripan</a>
+                            <a class="nav-link" id="achoripapa"
+                                href="#">Choripapa</a>
+                            <a class="nav-link" id="amandipollo"
+                                href="#">Mandipollo</a>
+                            <a class="nav-link" id="apizza" href="#">Pizza</a>
+                            <a class="nav-link" id="abebida"
+                                href="#">Bebidas</a>
+                            <a class="nav-link" id="todos" href="#">Todos</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="carouselExampleAutoplaying" class="carousel slide"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="w-100 alert alert-success">
+                            <h2>Semana de Promoción</h2>
+
+                            ¡Obtén un 20% de descuento en todas las
+                            hamburguesas! <br>
+                            <strong>Días:</strong> Lunes a Viernes <br>
+                            <strong>Acompañantes:</strong> Papas Fritas,
+                            Ensalada
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class=" w-100 alert alert-info">
+                            <h2>Promociones de Compra</h2>
+
+                            Compra una pizza y obtén un refresco gratis.
+                            <br>
+                            <strong>Días:</strong> Todos los días <br>
+                            <strong>Acompañantes:</strong> Refresco
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class=" w-100 alert alert-warning">
+                            <h2>Códigos de Descuento</h2>
+
+                            Usa el código <strong>SAVE20</strong> para obtener
+                            un 20% de
+                            descuento en tu próxima compra. <br>
+                            <strong>Días:</strong> Todos los días <br>
+                            <strong>Acompañantes:</strong> N/A
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="alert alert-danger w-100">
+                            <h2>Sección de Descuentos</h2>
+
+                            ¡Descuentos especiales en bebidas durante el fin de
+                            semana!
+                            <br>
+                            <strong>Días:</strong> Sábado y Domingo <br>
+                            <strong>Acompañantes:</strong> Snacks variados
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Sección de Categorías del Menú -->
+            <section>
+                <h2>Categorías del Menú</h2>
+
+                <div class="row">
+                    <!-- Hamburguesas -->
+                    <div class="col-md-4 mb-4" id="hamburguesa">
+                        <div class="card">
+                            <div class="card-header">
+                                Hamburguesas
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <strong>Hamburguesa Clásica</strong> - $5.00
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Hamburguesa Doble</strong> - $7.50
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Pizzas -->
+                    <div class="col-md-4 mb-4 " id="pizza">
+                        <div class="card">
+                            <div class="card-header">
+                                Pizzas
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <strong>Pizza Margherita</strong> - $8.00
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Pizza Pepperoni</strong> - $9.00
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Bebidas -->
+                    <div class="col-md-4 mb-4 " id="bebida">
+                        <div class="card">
+                            <div class="card-header">
+                                Bebidas
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <strong>Refresco</strong> - $1.50
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Agua Mineral</strong> - $1.00
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Perro -->
+                    <div class="col-md-4 mb-4 " id="perro">
+                        <div class="card">
+                            <div class="card-header">
+                                Perro
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <strong>Perro Sencillo</strong> - $3.00
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Perro Especial</strong> - $4.50
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Perra -->
+                    <div class="col-md-4 mb-4 " id="perra">
+                        <div class="card">
+                            <div class="card-header">
+                                Perra
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <strong>Perra Sencilla</strong> - $3.50
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Perra Especial</strong> - $5.00
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Salchipapas -->
+                    <div class="col-md-4 mb-4 " id="salchipapa">
+                        <div class="card">
+                            <div class="card-header">
+                                Salchipapas
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <strong>Salchipapas Clásicas</strong> -
+                                    $4.00
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Salchipapas Especiales</strong> -
+                                    $5.50
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Choripán -->
+                    <div class="col-md-4 mb-4 " id="choripan">
+                        <div class="card">
+                            <div class="card-header">
+                                Choripán
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <strong>Choripán Tradicional</strong> -
+                                    $3.50
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Choripán con Queso</strong> - $4.50
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Choripapa -->
+                    <div class="col-md-4 mb-4 " id="choripapa">
+                        <div class="card">
+                            <div class="card-header">
+                                Choripapa
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <strong>Choripapa Sencilla</strong> - $5.00
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Choripapa Especial</strong> - $6.50
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Mandipollo -->
+                    <div class="col-md-4 mb-4 " id="mandipollo">
+                        <div class="card">
+                            <div class="card-header">
+                                Mandipollo
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <strong>Mandipollo Sencillo</strong> - $6.00
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Mandipollo Especial</strong> - $7.50
+                                    <p>Disponible</p>
+                                    <button
+                                        class="btn btn-primary">Comprar</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Salsas -->
+                    <div class="col-md-4 mb-4 d-none" id="salsa">
+                        <div class="card">
+                            <div class="card-header">
+                                Salsas
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <strong>Barbikiu</strong>
+                                    <p>Disponible</p>
+
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Rosada</strong>
+                                    <p>Disponible</p>
+
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Mermelada</strong>
+                                    <p>Disponible</p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Snacks -->
+                    <div class="col-md-4 mb-4 d-none" id="snack">
+                        <div class="card">
+                            <div class="card-header">
+                                Snacks
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <strong>Butiffarritas</strong>
+                                    <p>Disponible</p>
+                                    <button
+                                    class="btn btn-primary">Comprar</button>
+
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Miniempanadas</strong>
+                                    <p>Disponible</p>
+                                    <button
+                                    class="btn btn-primary">Comprar</button>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Alimentos Más Vendidos -->
+            <section>
+                <h2>Alimentos Más Vendidos</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Pizza Pepperoni</li>
+                    <li class="list-group-item">Hamburguesa Doble</li>
+                    <li class="list-group-item">Refresco</li>
+                </ul>
+            </section>
+            <footer class="py-5">
+                <div class="row">
+                  <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                  </div>
+            
+                  <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                  </div>
+            
+                  <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                  </div>
+            
+                  <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                      <h5>Subscribe to our newsletter</h5>
+                      <p>Monthly digest of what's new and exciting from us.</p>
+                      <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                  <p>© 2024 Company, Inc. All rights reserved.</p>
+                  <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"></a>twiter</li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"></a>facebook</li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"></a>linkedlin</li>
+                  </ul>
+                </div>
+              </footer>
+
+        </div>
+        
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/jquery-3.7.1.min.js"></script>
+        <script src="./objetos/class.js"></script>
+        <script src="./assets/js/navegacion.js"></script>
+        <script src="./assets/js/index.js"></script>
+
+
+    </body>
+</html>
