@@ -4,7 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets//themify-icons/css/themify-icons.css">
+          <!-- Bootstrap CSS v5.2.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <link rel="stylesheet" href="./assets/css/style.css">
 
         
@@ -14,24 +17,16 @@
         <div class="container">
             <header class="p-3 text-bg-dark">
                 <div class="container">
-                  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <div class="d-flex flex-wrap align-items-center justify-content-between">
                     <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                        <img class="bi me-2" role="img" aria-label="logo" src="./assets/img/logo.svg" id="logo"></img>
                     </a>
-            
-                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                      <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                      <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-                      <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-                      <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-                      <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-                    </ul>
-            
-            
+
+
                     <div id="sesion" class="text-end">
 
                     </div>
-                  </div>
+                </div>
                 </div>
               </header>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -39,27 +34,31 @@
                     <div class="collapse navbar-collapse"
                         id="navbarNavAltMarkup">
                         <div class="navbar-nav mx-auto">
-                            <a class="nav-link" id="aperro" href="#">Perro</a>
-                            <a class="nav-link" id="aperra" href="#">Perra</a>
-                            <a class="nav-link" id="ahamburguesa"
-                                href="#">Hamburguesa</a>
-                            <a class="nav-link" id="asalchipapa"
-                                href="#">Salchipapas</a>
-                            <a class="nav-link" id="achoripan"
-                                href="#">Choripan</a>
-                            <a class="nav-link" id="achoripapa"
-                                href="#">Choripapa</a>
-                            <a class="nav-link" id="amandipollo"
-                                href="#">Mandipollo</a>
-                            <a class="nav-link" id="apizza" href="#">Pizza</a>
-                            <a class="nav-link" id="abebida"
-                                href="#">Bebidas</a>
-                            <a class="nav-link" id="todos" href="#">Todos</a>
+                            <a class="nav-link pl-3" id="aperro" href="#">Perro</a>
+
+                            <a class="nav-link pl-3" id="aperra" href="#">Perra</a>
+
+                            <a class="nav-link pl-3" id="ahamburguesa" href="#">Hamburguesa</a>
+
+                            <a class="nav-link pl-3" id="asalchipapa" href="#">Salchipapas</a>
+
+                            <a class="nav-link pl-3" id="achoripan" href="#">Choripan</a>
+
+                            <a class="nav-link pl-3" id="achoripapa" href="#">Choripapa</a>
+
+                            <a class="nav-link pl-3" id="amandipollo" href="#">Mandipollo</a>
+
+                            <a class="nav-link pl-3" id="apizza" href="#">Pizza</a>
+
+                            <a class="nav-link pl-3" id="abebida" href="#">Bebidas</a>
+
+                            <a class="nav-link pl-3" id="todos" href="#">Todos</a>
                         </div>
                     </div>
                 </div>
             </nav>
 
+            <!-- Carrucel de promociones -->
             <div id="carouselExampleAutoplaying" class="carousel slide"
                 data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -116,341 +115,210 @@
 
             <!-- Sección de Categorías del Menú -->
             <section>
-                <h2>Categorías del Menú</h2>
+                <h2>Productos mas comprados</h2>
 
                 <div class="row">
                     <!-- Hamburguesas -->
-                    <div class="col-md-4 mb-4" id="hamburguesa">
-                        <div class="card">
-                            <div class="card-header">
-                                Hamburguesas
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <strong>Hamburguesa Clásica</strong> - $5.00
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                                <li class="list-group-item">
-                                    <strong>Hamburguesa Doble</strong> - $7.50
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                            </ul>
+                    <div class="card-productos col-md-4 mb-1 box-shadow" id="hamburguesa">
+                            <div class="card flex-md-row mb-6 box-shadow h-md-250">
+                                <img class="card-img-left flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18ffdb968a6%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18ffdb968a6%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1953125%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
+                                <div class="card-body d-flex flex-column align-items-start flex-grow-1">
+                                    <strong class="d-inline-block mb-2 text-primary">Hamburguesa</strong>
+                                    <div class="mb-1 text-muted ">$ 10.000</div>
+                                    <p class="card-text mb-auto">This is a wider card with supporting text below </p>
+                                    <a href="#" class="btn btn-primary"><i class="ti-shopping-cart"></i> Obtener ahora</a>
+                                </div>
                         </div>
                     </div>
+                    
 
                     <!-- Pizzas -->
-                    <div class="col-md-4 mb-4 " id="pizza">
-                        <div class="card">
-                            <div class="card-header">
-                                Pizzas
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <strong>Pizza Margherita</strong> - $8.00
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                                <li class="list-group-item">
-                                    <strong>Pizza Pepperoni</strong> - $9.00
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                            </ul>
+                    <div class="card-productos col-md-4 mb-1 box-shadow" id="pizza">
+                            <div class="card flex-md-row mb-6 box-shadow h-md-250">
+                                <img class="card-img-left flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18ffdb968a6%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18ffdb968a6%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1953125%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
+                                <div class="card-body d-flex flex-column align-items-start flex-grow-1">
+                                    <strong class="d-inline-block mb-2 text-primary">Pizzas</strong>
+                                    <div class="mb-1 text-muted ">$ 8.000</div>
+                                    <p class="card-text mb-auto">This is a wider card with supporting text below </p>
+                                    <a href="#" class="btn btn-primary"><i class="ti-shopping-cart"></i> Obtener ahora</a>
+                                </div>
                         </div>
                     </div>
 
                     <!-- Bebidas -->
-                    <div class="col-md-4 mb-4 " id="bebida">
-                        <div class="card">
-                            <div class="card-header">
-                                Bebidas
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <strong>Refresco</strong> - $1.50
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                                <li class="list-group-item">
-                                    <strong>Agua Mineral</strong> - $1.00
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                            </ul>
+                    <div class="card-productos col-md-4 mb-1 box-shadow" id="bebida">
+                            <div class="card flex-md-row mb-6 box-shadow h-md-250">
+                                <img class="card-img-left flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18ffdb968a6%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18ffdb968a6%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1953125%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
+                                <div class="card-body d-flex flex-column align-items-start flex-grow-1">
+                                    <strong class="d-inline-block mb-2 text-primary">Coca-Cola Personal</strong>
+                                    <div class="mb-1 text-muted ">$ 3.500</div>
+                                    <p class="card-text mb-auto">This is a wider card with supporting text below </p>
+                                    <a href="#" class="btn btn-primary"><i class="ti-shopping-cart"></i> Obtener ahora</a>
+                                </div>
                         </div>
                     </div>
+
                     <!-- Perro -->
-                    <div class="col-md-4 mb-4 " id="perro">
-                        <div class="card">
-                            <div class="card-header">
-                                Perro
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <strong>Perro Sencillo</strong> - $3.00
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                                <li class="list-group-item">
-                                    <strong>Perro Especial</strong> - $4.50
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                            </ul>
+                    <div class="card-productos col-md-4 mb-1 box-shadow" id="perro">
+                            <div class="card flex-md-row mb-6 box-shadow h-md-250">
+                                <img class="card-img-left flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18ffdb968a6%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18ffdb968a6%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1953125%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
+                                <div class="card-body d-flex flex-column align-items-start flex-grow-1">
+                                    <strong class="d-inline-block mb-2 text-primary">Perro Especial</strong>
+                                    <div class="mb-1 text-muted ">$ 18.500</div>
+                                    <p class="card-text mb-auto">This is a wider card with supporting text below </p>
+                                    <a href="#" class="btn btn-primary"><i class="ti-shopping-cart"></i> Obtener ahora</a>
+                                </div>
                         </div>
                     </div>
 
                     <!-- Perra -->
-                    <div class="col-md-4 mb-4 " id="perra">
-                        <div class="card">
-                            <div class="card-header">
-                                Perra
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <strong>Perra Sencilla</strong> - $3.50
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                                <li class="list-group-item">
-                                    <strong>Perra Especial</strong> - $5.00
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                            </ul>
+                    <div class="card-productos col-md-4 mb-1 box-shadow" id="perro">
+                            <div class="card flex-md-row mb-6 box-shadow h-md-250">
+                                <img class="card-img-left flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18ffdb968a6%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18ffdb968a6%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1953125%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
+                                <div class="card-body d-flex flex-column align-items-start flex-grow-1">
+                                    <strong class="d-inline-block mb-2 text-primary">Perra Especial</strong>
+                                    <div class="mb-1 text-muted ">$ 14.000</div>
+                                    <p class="card-text mb-auto">This is a wider card with supporting text below </p>
+                                    <a href="#" class="btn btn-primary"><i class="ti-shopping-cart"></i> Obtener ahora</a>
+                                </div>
                         </div>
                     </div>
 
                     <!-- Salchipapas -->
-                    <div class="col-md-4 mb-4 " id="salchipapa">
-                        <div class="card">
-                            <div class="card-header">
-                                Salchipapas
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <strong>Salchipapas Clásicas</strong> -
-                                    $4.00
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                                <li class="list-group-item">
-                                    <strong>Salchipapas Especiales</strong> -
-                                    $5.50
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                            </ul>
+                    <div class="card-productos col-md-4 mb-1 box-shadow" id="perro">
+                            <div class="card flex-md-row mb-6 box-shadow h-md-250">
+                                <img class="card-img-left flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18ffdb968a6%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18ffdb968a6%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1953125%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
+                                <div class="card-body d-flex flex-column align-items-start flex-grow-1">
+                                    <strong class="d-inline-block mb-2 text-primary">Salchipapas Especiales</strong>
+                                    <div class="mb-1 text-muted ">$ 12.000</div>
+                                    <p class="card-text mb-auto">This is a wider card with supporting text below </p>
+                                    <a href="#" class="btn btn-primary"><i class="ti-shopping-cart"></i> Obtener ahora</a>
+                                </div>
                         </div>
                     </div>
-
                     <!-- Choripán -->
-                    <div class="col-md-4 mb-4 " id="choripan">
-                        <div class="card">
-                            <div class="card-header">
-                                Choripán
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <strong>Choripán Tradicional</strong> -
-                                    $3.50
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                                <li class="list-group-item">
-                                    <strong>Choripán con Queso</strong> - $4.50
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                            </ul>
+                    <div class="card-productos col-md-4 mb-1 box-shadow" id="perro">
+                            <div class="card flex-md-row mb-6 box-shadow h-md-250">
+                                <img class="card-img-left flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18ffdb968a6%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18ffdb968a6%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1953125%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
+                                <div class="card-body d-flex flex-column align-items-start flex-grow-1">
+                                    <strong class="d-inline-block mb-2 text-primary">Choripán con Queso</strong>
+                                    <div class="mb-1 text-muted ">$ 8.000</div>
+                                    <p class="card-text mb-auto">This is a wider card with supporting text below </p>
+                                    <a href="#" class="btn btn-primary"><i class="ti-shopping-cart"></i> Obtener ahora</a>
+                                </div>
                         </div>
                     </div>
 
                     <!-- Choripapa -->
-                    <div class="col-md-4 mb-4 " id="choripapa">
-                        <div class="card">
-                            <div class="card-header">
-                                Choripapa
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <strong>Choripapa Sencilla</strong> - $5.00
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                                <li class="list-group-item">
-                                    <strong>Choripapa Especial</strong> - $6.50
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                            </ul>
+                    <div class="card-productos col-md-4 mb-1 box-shadow" id="perro">
+                            <div class="card flex-md-row mb-6 box-shadow h-md-250">
+                                <img class="card-img-left flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18ffdb968a6%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18ffdb968a6%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1953125%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
+                                <div class="card-body d-flex flex-column align-items-start flex-grow-1">
+                                    <strong class="d-inline-block mb-2 text-primary">Choripapa Especial</strong>
+                                    <div class="mb-1 text-muted ">$ 9.000</div>
+                                    <p class="card-text mb-auto">This is a wider card with supporting text below </p>
+                                    <a href="#" class="btn btn-primary"><i class="ti-shopping-cart"></i> Obtener ahora</a>
+                                </div>
                         </div>
                     </div>
-
                     <!-- Mandipollo -->
-                    <div class="col-md-4 mb-4 " id="mandipollo">
-                        <div class="card">
-                            <div class="card-header">
-                                Mandipollo
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <strong>Mandipollo Sencillo</strong> - $6.00
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                                <li class="list-group-item">
-                                    <strong>Mandipollo Especial</strong> - $7.50
-                                    <p>Disponible</p>
-                                    <button
-                                        class="btn btn-primary">Comprar</button>
-                                </li>
-                            </ul>
+                    <div class="card-productos col-md-4 mb-1 box-shadow" id="perro">
+                            <div class="card flex-md-row mb-6 box-shadow h-md-250">
+                                <img class="card-img-left flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18ffdb968a6%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18ffdb968a6%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1953125%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
+                                <div class="card-body d-flex flex-column align-items-start flex-grow-1">
+                                    <strong class="d-inline-block mb-2 text-primary">Mandipollo Especial</strong>
+                                    <div class="mb-1 text-muted ">$ 11.000</div>
+                                    <p class="card-text mb-auto">This is a wider card with supporting text below </p>
+                                    <a href="#" class="btn btn-primary"><i class="ti-shopping-cart"></i> Obtener ahora</a>
+                                </div>
                         </div>
                     </div>
-                    <!-- Salsas -->
-                    <div class="col-md-4 mb-4 d-none" id="salsa">
-                        <div class="card">
-                            <div class="card-header">
-                                Salsas
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <strong>Barbikiu</strong>
-                                    <p>Disponible</p>
-
-                                </li>
-                                <li class="list-group-item">
-                                    <strong>Rosada</strong>
-                                    <p>Disponible</p>
-
-                                </li>
-                                <li class="list-group-item">
-                                    <strong>Mermelada</strong>
-                                    <p>Disponible</p>
-
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Snacks -->
-                    <div class="col-md-4 mb-4 d-none" id="snack">
-                        <div class="card">
-                            <div class="card-header">
-                                Snacks
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <strong>Butiffarritas</strong>
-                                    <p>Disponible</p>
-                                    <button
-                                    class="btn btn-primary">Comprar</button>
-
-                                </li>
-                                <li class="list-group-item">
-                                    <strong>Miniempanadas</strong>
-                                    <p>Disponible</p>
-                                    <button
-                                    class="btn btn-primary">Comprar</button>
-
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary">Menú</a>
                     </div>
                 </div>
-            </section>
-
-            <!-- Sección de Alimentos Más Vendidos -->
-            <section>
-                <h2>Alimentos Más Vendidos</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">Pizza Pepperoni</li>
-                    <li class="list-group-item">Hamburguesa Doble</li>
-                    <li class="list-group-item">Refresco</li>
-                </ul>
             </section>
             <footer class="py-5">
-                <div class="row">
-                  <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-                    </ul>
-                  </div>
-            
-                  <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-                    </ul>
-                  </div>
-            
-                  <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-                    </ul>
-                  </div>
-            
-                  <div class="col-md-5 offset-md-1 mb-3">
-                    <form>
-                      <h5>Subscribe to our newsletter</h5>
-                      <p>Monthly digest of what's new and exciting from us.</p>
-                      <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                        <button class="btn btn-primary" type="button">Subscribe</button>
-                      </div>
-                    </form>
-                  </div>
+                <div class="row justify-content-center">
+                    <div class="col col-md-4  justify-content-center" id="footer-item">
+                        <h5 class="text-center">Recursos</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2 text-center"><a href="#" class="nav-link p-0 text-body-secondary">Soporte</a></li>
+                            <li class="nav-item mb-2 text-center"><a href="#" class="nav-link p-0 text-body-secondary">Mapa</a></li>
+                            <li class="nav-item mb-2 text-center"><a href="#" class="nav-link p-0 text-body-secondary">Centro de ayuda</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col col-md-4 mb-4 justify-content-center" id="footer-item">
+                        <h5 class="text-center">Compañia</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2 text-center"><a href="#" class="nav-link p-0 text-body-secondary">Sobre nosotros</a></li>
+                            <li class="nav-item mb-2 text-center"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
+                            <li class="nav-item mb-2 text-center"><a href="#" class="nav-link p-0 text-body-secondary">PQRS</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col col-md-4 mb-4 justify-content-center" id="footer-item">
+                        <h5 class="text-center">Legal</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2 text-center"><a href="#" class="nav-link p-0 text-body-secondary">Terminos</a></li>
+                            <li class="nav-item mb-2 text-center"><a href="#" class="nav-link p-0 text-body-secondary">Politicas de privacidad</a></li>
+                            <li class="nav-item mb-2 text-center"><a href="#" class="nav-link p-0 text-body-secondary">Contacto</a></li>
+                        </ul>
+                    </div>
+
+                    
                 </div>
-            
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                  <p>© 2024 Company, Inc. All rights reserved.</p>
-                  <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-body-emphasis" href="#"></a>twiter</li>
-                    <li class="ms-3"><a class="link-body-emphasis" href="#"></a>facebook</li>
-                    <li class="ms-3"><a class="link-body-emphasis" href="#"></a>linkedlin</li>
-                  </ul>
+                <!-- Social Media -->
+                <div class="footer-bottom  text-dark text-center border-top py-3">
+                    <div class="social-links">
+                        <ul class="d-flex justify-content-center list-unstyled m-0">
+                            <li class="mx-2">
+                                <a href="#" title="Instagram" class="text-dark">
+                                    <i class="ti-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#" title="Linkedin" class="text-dark">
+                                    <i class="ti-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#" title="Twitter" class="text-dark">
+                                    <i class="ti-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#" title="Youtube" class="text-dark">
+                                    <i class="ti-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#" title="GitHub" class="text-dark">
+                                    <i class="ti-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Copyright -->
+                <div class="footer-copy text-light text-center border-top wow fadeIn">
+                    <p class="mb-0 py-3 text-muted small">&copy; Copyright <script>document.write(new Date().getFullYear())</script> Hecho por Run Dogs<i class="ti-heart text-danger"></i></p>
                 </div>
               </footer>
 
         </div>
-        
-        <script src="./assets/js/bootstrap.min.js"></script>
-        <script src="./assets/js/bootstrap.bundle.min.js"></script>
-        <script src="./assets/js/jquery-3.7.1.min.js"></script>
+        <!-- Importacion J-query -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
         <script src="./objetos/class.js"></script>
         <script src="./assets/js/navegacion.js"></script>
         <script src="./assets/js/index.js"></script>
