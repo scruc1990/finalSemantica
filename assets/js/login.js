@@ -1,4 +1,26 @@
 $(function () {
+    $('#inputEmail').on('input', function () {
+        var email = $('#inputEmail').val();
+        var emailRegex = /\S+@\S+\.\S+/;
+        if (emailRegex.test(email)) {
+            $('#inputEmail').removeClass('is-invalid');
+            $('#inputEmail').addClass('is-valid');
+            let user = Usuario.buscarPoremail(email);
+            if (user) {
+               var foto = localStorage.getItem('imageData');
+               var fotoEmail = localStorage.getItem('emailFoto');
+
+               if (fotoEmail == email) {
+                    $('#logo').attr('src', foto);
+                }
+            }
+        } else {
+            $('#inputEmail').removeClass('is-valid');
+            $('#inputEmail').addClass('is-invalid');
+        }
+    });
+
+
     $("#formlogin").on("submit", function (event) {
         event.preventDefault();
         if ($("#inputEmail").val() != "" && $("#inputPassword").val() != "" ) {

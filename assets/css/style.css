@@ -12,7 +12,7 @@ table {
  }
  th {
     background-color: #4caf50;
-    color: white;
+    color: black;
  }
 
 #logo {
@@ -47,4 +47,12 @@ footer .border-top{
 }
 #footer-item {
    height: 150px;
+}
+
+
+.modal {
+   --bs-modal-width: 70%;
+}
+.modal-content {
+   width: 100%;
 }

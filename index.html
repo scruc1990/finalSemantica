@@ -236,8 +236,110 @@
                     <div class="text-center">
                         <a href="#" class="btn btn-primary">Menú</a>
                     </div>
+                    <div class="text-center">
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalId"
+                        >
+                            Calificación y Opiniones
+                        </button>
+                    </div>
                 </div>
             </section>
+
+            <!-- Button trigger modal -->
+            
+            
+            <!-- Modal calificaciones y Opiniones-->
+            <div
+                class="modal fade"
+                id="modalId"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="modalTitleId"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitleId">
+                                Deja tu comentario
+                            </h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name="formId1"
+                                    id="product-modal"
+                                    placeholder="Producto"
+                                    required
+                                />
+                                <label for="formId1">Producto</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name="formId1"
+                                    id="coment-modal"
+                                    placeholder="Comentario"
+                                    required
+                                />
+                                <label for="formId1">Comentario</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    name="formId1"
+                                    id="calif-modal"
+                                    placeholder="Calificación"
+                                    min="1"
+                                    max="5"
+                                    required
+                                />
+                                <label for="formId1">Calificación</label>
+                            </div>
+                            <table class="table text-black" id="myTable">
+                                <thead>
+                                  <tr>
+                                    <th scope="col text-black">Producto </th>
+                                    <th scope="col text-black">Comentario </th>
+                                    <th scope="col text-black">Calificación </th>
+                                    <th scope="col text-black">Usuario </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                      
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                            >
+                                Cerrar
+                            </button>
+                            <button type="button" class="btn btn-primary" id="btn-modal">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <footer class="py-5">
                 <div class="row justify-content-center">
                     <div class="col col-md-4  justify-content-center" id="footer-item">
@@ -320,7 +422,6 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
         <script src="./objetos/class.js"></script>
-        <script src="./assets/js/navegacion.js"></script>
         <script src="./assets/js/index.js"></script>
 
 
