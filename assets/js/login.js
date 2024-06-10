@@ -1,21 +1,20 @@
 $(function () {
     $("#formlogin").on("submit", function (event) {
-        if ($("#email").val() != "" && $("#password").val() != "" ) {
-            
-            let us=Usuario.buscarPoremail($("#email").val())
-            if (us.contrasena===$("#password").val()) {
+        event.preventDefault();
+        if ($("#inputEmail").val() != "" && $("#inputPassword").val() != "" ) {
+            let us=Usuario.buscarPoremail($("#inputEmail").val())
+            if (us.contrasena===$("#inputPassword").val()) {
                 alert("bienvenido")
                 window.location="./index.html"
                 let aux=new Usuario(us.id, us.nombre, us.email, "", us.contrasena, "", "","si")
-                aux.modificar()
+                aux.setUserLogin()
                 
+            } else {
+                alert("contraseña incorrecta")
             }
 
         }else{
         alert("los campos no pueden estar vacios")
         }
-    
-        //$( "span" ).text( "Not valid!" ).show().fadeOut( 1000 );
-        event.preventDefault();
     });
     })

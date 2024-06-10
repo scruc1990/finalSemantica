@@ -11,6 +11,7 @@ $("#formregister").on("submit", function (event) {
 
             let usuario=new Usuario(id, nombre, email, "", contrasena, "", "","no");  
             usuario.guardar();  
+            window.location="./login.html";
         }else{
             alert("las contraseña debe coincidir")
         }
@@ -19,7 +20,6 @@ $("#formregister").on("submit", function (event) {
     alert("los campos no pueden estar vacios")
     }
 
-    //$( "span" ).text( "Not valid!" ).show().fadeOut( 1000 );
     event.preventDefault();
 });
 })

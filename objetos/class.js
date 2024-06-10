@@ -38,7 +38,15 @@ class Usuario {
             localStorage.setItem('usuarios', JSON.stringify(usuarios));
         }
     }
-
+    static getUsuarioLogin() {
+        return JSON.parse(localStorage.getItem('userLogin')) || [];
+    }
+     setUserLogin() {
+        localStorage.setItem('userLogin', JSON.stringify(this));
+    }
+    static logout() {
+        localStorage.setItem('userLogin', JSON.stringify([]));
+    }
 }
 
 // Clase Producto
