@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="stylesheet" href="./assets//themify-icons/css/themify-icons.css">
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./assets/css/perfil.css" />
+    </head>
+
+    <body>
+        <header class="p-3 text-bg-dark">
+            <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img class="bi me-2" role="img" aria-label="logo" src="./assets/img/logo.svg" id="logo"></img>
+                </a>
+                <ul class="nav justify-content-center">
+
+                    <li  class="nav-item">
+                        <button id="help" class="nav-link text-white"  data-bs-toggle="modal" data-bs-target="#ayudasModal">Ayudas y Documentación</button>
+                    </li>
+
+                </ul>
+                <div id="sesion" class="text-end">
+
+                </div>
+
+
+            </div>
+            </div>
+          </header>
+        <main>
+            <div class="container">
+                <button id="changecolor" title="ligth" class="alert alert-warning fixed-top text-black">
+                    <i class="ti-shine"></i>
+                </button>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card mt-5">
+                            <div class="card-header text-center">
+                                <a href="/" class="text-center text-white text-decoration-none">
+                                    <img class="bi me-2" role="img" aria-label="logo" src="./assets/img/logo.svg" id="logo"></img>
+                                </a>
+                                <h3>Perfil</h3>
+                            </div>
+                            <div class="card-body">
+                                <form id="formperfil">
+                                    <div class="form-floating mb-3">
+                                        <input
+                                            type="file"
+                                            id="fileInput"
+                                            class="form-control"
+                                            placeholder="Actualizar foto de perfil"
+                                            accept="image/*"
+                                            required
+                                        />
+                                        <label for="inputName">Actualizar foto de perfil</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input
+                                            type="text"
+                                            id="inputName"
+                                            class="form-control"
+                                            placeholder="Nombre"
+                                            required=""
+                                            autofocus=""
+                                        />
+                                        <label for="inputName">Nombre</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input
+                                            type="text"
+                                            id="inputLastName"
+                                            class="form-control"
+                                            placeholder="Apellido"
+                                        />
+                                        <label for="inputLastName">Apellido</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input
+                                            type="email"
+                                            id="inputEmail"
+                                            class="form-control"
+                                            placeholder="Email address"
+                                            required=""
+                                        />
+                                        <label for="inputEmail">Correo</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input
+                                            type="password"
+                                            id="antPassword"
+                                            class="form-control"
+                                            placeholder="Password"
+                                            required=""
+                                        />
+                                        <label for="antPassword">Antigua Contraseña</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input
+                                            type="password"
+                                            id="newPassword"
+                                            class="form-control"
+                                            placeholder="Password"
+                                            required=""
+                                        />
+                                        <label for="newPassword">Contraseña</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input
+                                            type="password"
+                                            id="newPassword2"
+                                            class="form-control"
+                                            placeholder="Password"
+                                            required=""
+                                        />
+                                        <label for="newPassword2"
+                                            >Confirmar Contraseña</label
+                                        >
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary btn-block"
+                                    >
+                                        Guardar
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Modal Ayudas y Documentación -->
+        <div class="modal fade" id="ayudasModal" tabindex="-1" aria-labelledby="ayudasModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ayudasModalLabel">Ayudas y Documentación</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Encuentra respuestas a tus preguntas y aprende más sobre nuestros servicios en Run Dogs.</p>
+                        <h3>Preguntas Frecuentes</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item"><strong>¿Cómo hago un pedido?</strong> - Puedes hacer un pedido a través de nuestra app o sitio web. Simplemente selecciona tus platos favoritos y sigue las instrucciones.</li>
+                            <li class="list-group-item"><strong>¿Cuáles son los métodos de pago aceptados?</strong> - Aceptamos pagos con tarjetas de crédito, débito y PayPal.</li>
+                            <li class="list-group-item"><strong>¿Ofrecen opciones vegetarianas?</strong> - Sí, tenemos una variedad de opciones vegetarianas disponibles en nuestro menú.</li>
+                        </ul>
+                        <h3>Documentación</h3>
+                        <p>Descarga nuestros manuales y guías para aprovechar al máximo nuestros servicios.</p>
+                        <a href="manual_usuario.pdf" class="btn btn-secondary" download>Manual del Usuario (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Importacion J-query -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./assets/js/perfil.js"></script>
+        <script src="./objetos/class.js"></script>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+.card-header {
+    border-bottom: 0px;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+ }
+ #changecolor{
+    width: 50px;  
+    color: black;
+ }
+ .white-mode {
+    background-color: #FFC340 !important;
+    
+  }
+ 

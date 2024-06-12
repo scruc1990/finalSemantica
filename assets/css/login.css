@@ -1,0 +1,21 @@
+.card-header {
+    border-bottom: 0px;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+ }
+ #changecolor{
+    width: 50px;  
+    color: black;
+ }
+ .footer-mode p,h1,h5,ul,li,i{
+    background-color: white;
+    color: #000000;
+ 
+ }
+ .white-mode {
+    background-color: #FFC340 !important;
+    
+  }
